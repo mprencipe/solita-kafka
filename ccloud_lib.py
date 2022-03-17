@@ -128,6 +128,10 @@ def parse_args():
                           dest="topic",
                           help="topic name",
                           required=True)
+    required.add_argument('-p',
+                          dest="pat",
+                          help="GitHub Personal Access Token (PAT)",
+                          required=True)
     args = parser.parse_args()
 
     return args
